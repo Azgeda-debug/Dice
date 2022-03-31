@@ -2,7 +2,7 @@
    liczba oczek pojawia się taka jaka jest wylosowana liczba */ 
 function randomize()
 {   
-   const sound = new Audio('DiceRoll.wav');
+    const sound = new Audio('DiceRoll.wav');
     let random = Math.round(Math.random()*5+1);
 
     if(random == 1)
@@ -35,6 +35,7 @@ function randomize()
         sound.play();
         six();
     }
+    console.log(random);
 }
 
 /* funkcje w canvas, rysują one liczbę oczek */
