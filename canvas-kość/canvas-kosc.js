@@ -1,7 +1,8 @@
 /* Funkcja randomize - jej zadaniem jest wylosowanie liczby od 1 do 6
    liczba oczek pojawia się taka jaka jest wylosowana liczba */ 
 function randomize()
-{   const sound = new Audio('DiceRoll.wav');
+{   
+   const sound = new Audio('DiceRoll.wav');
     let random = Math.round(Math.random()*5+1);
 
     if(random == 1)
