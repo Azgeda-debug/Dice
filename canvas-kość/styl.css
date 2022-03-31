@@ -23,6 +23,12 @@ input:hover
     color: darkblue;
 }
 
+input:active
+{
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
 .kontener
 {
     width: 1000px;

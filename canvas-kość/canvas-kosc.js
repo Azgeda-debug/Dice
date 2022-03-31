@@ -1,32 +1,42 @@
-let random = Math.round(Math.random()*5+1);
-
+/* Funkcja randomize - jej zadaniem jest wylosowanie liczby od 1 do 6
+   liczba oczek pojawia się taka jaka jest wylosowana liczba */ 
 function randomize()
-{
+{   const sound = new Audio('DiceRoll.wav');
+    let random = Math.round(Math.random()*5+1);
+
     if(random == 1)
     {
+        sound.play();
         one();
     }
     else if(random == 2)
     {
+        sound.play();
         two();
     }
     else if(random == 3)
     {
+        sound.play();
         three();
     }
     else if(random == 4)
     {
+        sound.play();
         four();
     }
     else if(random == 5)
     {
+        sound.play();
         five();
     }
     else if(random == 6)
     {
+        sound.play();
         six();
     }
 }
+
+/* funkcje w canvas, rysują one liczbę oczek */
 
 const ctx = document.getElementById('canvas').getContext('2d');
 
